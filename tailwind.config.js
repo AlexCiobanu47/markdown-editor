@@ -11,6 +11,14 @@ export default {
         orangeAccent: "#e66643",
         lighterGray: "#b0b1b3",
       },
+      typography: {
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
+          },
+        },
+      },
     },
   },
   plugins: [vitePluginRequire(), require("@tailwindcss/typography")],
