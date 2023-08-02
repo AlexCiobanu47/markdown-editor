@@ -1,27 +1,35 @@
-# React + TypeScript + Vite
+# Markdown editor in browser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## This website allows the previewing of markdown text in real time and was inspired by [a challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/inbrowser-markdown-editor-r16TrrQX9)
 
-Currently, two official plugins are available:
+## Functions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Name the current document using the input from the navbar and then save the document using the "Save changes button"
+- Delete the document with the name from the input
+- Load a document with the name from the input
 
-## Expanding the ESLint configuration
+### The project was made using:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Mobile-first aproach
+- Vite
+- Typescript
+- Tailwind CSS
+- Marked and Domify for the markdown to html transformation
 
-- Configure the top-level `parserOptions` property like this:
+### Screenshots
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+#### Desktop
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Desktop](/readme_images/desktop.png)
+
+#### Desktop with the preview toggle
+
+![Desktop with preview](/readme_images/desktop-preview.png)
+
+#### Mobile
+
+![Mobile](/readme_images/mobile.png)
+
+#### Mobile with the preview toggle
+
+![Mobile with preview](/readme_images/mobile-preview.png)
