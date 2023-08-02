@@ -9,7 +9,7 @@ const Preview: React.FC<PreviewProps> = ({ markdown }) => {
 
   return (
     <div className="flex-1">
-      <div className="w-full bg-gray-900 text-gray-400 uppercase tracking-wider p-1">
+      <div className="w-full bg-lighterDarkGray text-gray-200 uppercase tracking-wider p-1">
         Preview
       </div>
       <div

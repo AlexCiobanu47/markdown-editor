@@ -5,7 +5,7 @@ import Preview from "./components/Preview";
 function App() {
   const [markdown, setMarkdown] = useState("");
   return (
-    <div className="flex flex-col sw-full h-screen bg-gray-800 text-gray-300 overflow-hidden">
+    <div className="flex flex-col sw-full h-screen bg-darkGrey text-white overflow-hidden">
       <Navbar />
       <div className="flex flex-col sm:flex-row w-full h-full">
         <Editor markdown={markdown} setMarkdown={setMarkdown} />
