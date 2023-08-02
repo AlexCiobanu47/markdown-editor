@@ -20,8 +20,7 @@ function App() {
     setPreview(!preview);
   };
   useEffect(() => {
-    const initialMarkdown: string =
-      "# Welcome to the markdown editor\n## Enter the file name and then start typing your markdown in the MARKDOWN section\n## You can toggle the preview from the preview button\n";
+    const initialMarkdown: string = `# Welcome to the markdown editor\n## Enter the file name and then start typing your markdown in the MARKDOWN section\n## You can toggle the preview from the preview button\n- save the current document by adding a document name and pressing the save changes button\n- load a document with the name specified in the input field \n- delete a document with the name specified in the input field\n###### The following link provides more information on [Markdown syntax](https://www.markdownguide.org/cheat-sheet/)`;
     setMarkdown(initialMarkdown);
   }, []);
   return (
