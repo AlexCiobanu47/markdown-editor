@@ -50,11 +50,12 @@ const Navbar: React.FC<NavbarProps> = ({
           className="mx-5 h-5"
           onClick={deleteFromLocalStorage}
         />
-        <button className="flex items-center justify-center bg-orangeAccent p-2 rounded-md">
+        <button
+          className="flex items-center justify-center bg-orangeAccent p-2 rounded-md"
+          onClick={saveToLocalStorage}
+        >
           <img src={saveIcon} alt="" className="h-5 mx-2" />
-          <p className="hidden sm:inline text-sm" onClick={saveToLocalStorage}>
-            Save Changes
-          </p>
+          <p className="hidden sm:inline text-sm">Save Changes</p>
         </button>
       </div>
     </div>
