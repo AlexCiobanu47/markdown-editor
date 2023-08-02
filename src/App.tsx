@@ -33,7 +33,11 @@ function App() {
       />
       <div className="flex flex-col sm:flex-row w-full h-full">
         {preview && <Editor markdown={markdown} setMarkdown={setMarkdown} />}
-        <Preview markdown={markdown} handlePreview={handlePreview} />
+        <Preview
+          markdown={markdown}
+          handlePreview={handlePreview}
+          preview={preview}
+        />
       </div>
     </div>
   );

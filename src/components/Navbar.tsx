@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({
     setTitle(event.target.value);
   };
   return (
-    <div className="w-full h-fit flex justify-between bg-lightGray p-1">
+    <div className="w-full h-[10vh] flex justify-between bg-lightGray p-1">
       <div className="flex items-center justify-center">
         <h1 className="hidden sm:inline border-r-2 border-r-gray-400 px-5 uppercase tracking-[0.4rem]">
           MARKDOWN
