@@ -1,25 +1,16 @@
 import React, { ChangeEvent } from "react";
-import eyeIcon from "../assets/images/eyeIcon.png";
 interface EditorProps {
   markdown: string;
   setMarkdown: (markdown: string) => void;
-  handlePreview: () => void;
 }
-const Editor: React.FC<EditorProps> = ({
-  markdown,
-  setMarkdown,
-  handlePreview,
-}) => {
+const Editor: React.FC<EditorProps> = ({ markdown, setMarkdown }) => {
   const handleEditorChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setMarkdown(event.target.value);
   };
   return (
     <div className="flex-1 border-r-2 border-gray-600 ">
-      <div className="w-full flex justify-between bg-lighterDarkGray text-gray-200 uppercase tracking-wider p-1">
+      <div className="w-full bg-lighterDarkGray text-gray-200 uppercase tracking-wider p-1">
         <p>MARKDOWN</p>
-        <button onClick={handlePreview}>
-          <img src={eyeIcon} alt="" className="h-5 mx-2" />
-        </button>
       </div>
       <textarea
         className="h-[50vh] sm:h-full w-full overflow-y-auto bg-darkGrey outline-none p-6 resize-none"

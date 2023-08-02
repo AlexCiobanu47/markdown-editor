@@ -32,12 +32,8 @@ function App() {
         deleteFromLocalStorage={deleteFromLocalStorage}
       />
       <div className="flex flex-col sm:flex-row w-full h-full">
-        <Editor
-          markdown={markdown}
-          setMarkdown={setMarkdown}
-          handlePreview={handlePreview}
-        />
-        {preview && <Preview markdown={markdown} />}
+        {preview && <Editor markdown={markdown} setMarkdown={setMarkdown} />}
+        <Preview markdown={markdown} handlePreview={handlePreview} />
       </div>
     </div>
   );
