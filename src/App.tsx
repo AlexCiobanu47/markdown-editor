@@ -21,7 +21,7 @@ function App() {
   };
   useEffect(() => {
     const initialMarkdown: string =
-      "# Welcome to the markdown editor\n## Enter the file name and then start typing your markdown in the MARKDOWN section\n## You can toggle the preview from the preview button ";
+      "# Welcome to the markdown editor\n## Enter the file name and then start typing your markdown in the MARKDOWN section\n## You can toggle the preview from the preview button\n";
     setMarkdown(initialMarkdown);
   }, []);
   return (
