@@ -15,6 +15,7 @@ const Editor: React.FC<EditorProps> = ({ markdown, setMarkdown }) => {
       <textarea
         className="h-[50vh] sm:h-full w-full overflow-y-auto bg-darkGrey outline-none p-6 resize-none"
         onChange={handleEditorChange}
+        value={markdown}
       ></textarea>
     </div>
   );

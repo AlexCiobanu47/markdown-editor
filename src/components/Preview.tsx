@@ -5,7 +5,9 @@ interface PreviewProps {
   markdown: string;
 }
 const Preview: React.FC<PreviewProps> = ({ markdown }) => {
-  const parsedMarkdown = dompurify.sanitize(marked.parse(markdown));
+  const parsedMarkdown = dompurify.sanitize(
+    marked.parse(markdown, { mangle: false, headerIds: false })
+  );
 
   return (
     <div className="flex-1">
