@@ -11,6 +11,9 @@ export default {
         orangeAccent: "#e66643",
         lighterGray: "#b0b1b3",
       },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
       typography: {
         quoteless: {
           css: {
